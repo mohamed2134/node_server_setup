@@ -2,7 +2,7 @@ const express = require("express");
 const hbs = require('hbs');
 const app = express();
 const fs = require('fs');
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 //    APP Configuration
 
