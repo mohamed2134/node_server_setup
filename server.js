@@ -2,6 +2,7 @@ const express = require("express");
 const hbs = require('hbs');
 const app = express();
 const fs = require('fs');
+const port = process.env.port || 4000;
 
 //    APP Configuration
 
@@ -52,4 +53,6 @@ app.get('/about',(req,res)=>{
 });
 
 
-app.listen(4444);
+app.listen(port,()=>{
+  console.log("server start listening on port # "+port);
+});
