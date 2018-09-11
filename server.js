@@ -37,14 +37,11 @@ app.get('/',(req,res)=>{
    });
 });
 
-app.get('/person',(req,res)=>{
-  res.send(
-    {
-      "name":"mohamed",
-      "age":33,
-      "job":"programmer"
-    }
-  );
+app.get('/contact',(req,res)=>{
+   res.render('contact',{
+     title:"contact page",
+     year:new Date().getFullYear()
+   });
 });
 
 app.get('/about',(req,res)=>{
